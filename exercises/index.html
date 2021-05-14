@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="iconfonts/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="css/outer.css" />
+	<link rel="stylesheet" type="text/css" href="css/img-wrapper.css" />
+	<link rel="stylesheet" type="text/css" href="css/info.css" />
+	<link rel="stylesheet" type="text/css" href="css/star-wrapper.css" />
+</head>
+
+<body>
+
+	<div class="outer">
+		<div class="img-wrapper">
+			<img src="img/aquacat.jpg" alt="" />
+		</div>
+
+		<div class="info">
+			<p class="title">
+				Aqua Cat
+			</p>
+			<p class="category">
+			<div class="category-icon">
+				歌ってみた
+				</p>
+				<p class="introduce">
+					Nyanyanyanyanyanyanyanyanyanyanyanyanyanyanyanyanyanya!!!!!
+				</p>
+			</div>
+
+			<div class="star-wrapper">
+				<div class="stars">
+					<label class="fas fa-star"></label>
+					<label class="fas fa-star"></label>
+					<label class="fas fa-star"></label>
+					<label class="fas fa-star"></label>
+					<label class="fas fa-star"></label>
+				</div>
+
+				<div class="twitter">
+					<a class="fab fa-twitter" href="https://twitter.com/minatoaqua" target="_blank"></a>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			window.onload = function () {
+				var label = document.getElementsByClassName('fas')
+				var label_1 = document.getElementsByClassName('stars')
+				var label_2 = label_1[0].childNodes;
+				console.log(label)
+				console.log(label_2)
+				console.log(label[2])
+
+				let len = label.length
+				for(let i=0;i<len ;i++){
+				label[i].addEventListener('click', function () {
+					console.log("i",i)
+					//console.log(len-i)
+					//console.log(this)
+					
+					for(j=i;j<len;j++){
+						label[j].style.color = "#FFAAFF"
+						console.log("j",j)
+					}
+
+				})
+			}
+			
+				// label[0].onclick = function () {
+				// console.log("1")
+				// this.style.color = "#FFAAFF";
+				//#FFAAFF
+
+			//}
+			}
+
+
+		</script>
+</body>
+
+</html>

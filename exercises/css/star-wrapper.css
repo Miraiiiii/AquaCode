@@ -1,0 +1,41 @@
+.star-wrapper{
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #e9e9e9;
+}
+
+.star-wrapper .stars{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	margin-left: 4px;
+	flex-direction: row-reverse;
+	height: 50px;
+	cursor: pointer;
+}
+
+.star-wrapper .stars label{
+	padding-left: 2px;
+	cursor: pointer;
+	color: #717171;
+}
+
+.star-wrapper .stars label:hover,
+.star-wrapper .stars label:hover ~ label{
+	/* color: #FFAAFF; */
+}
+
+
+.star-wrapper .twitter{
+	margin-right: 10px;
+	font-size: 18px;
+	float: right;
+}
+
+.star-wrapper .twitter a{
+	text-decoration: none;
+}
+
+.star-wrapper .twitter a:link, a:hover, a:active, a:visited{
+	color: #1DA1F2;
+}

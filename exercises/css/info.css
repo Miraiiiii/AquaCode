@@ -1,0 +1,44 @@
+.info{
+	padding: 0 18px;
+	font-size: 14px;
+	color: #acaaaa;
+	margin-bottom: 20px;
+}
+
+.info .title{
+	color: #717171;
+	font-size: 18px;
+	font-weight: bold;
+	margin:13px 0 15px 0;
+}
+
+.info .title:hover{
+	color: #FFAAFF;
+}
+
+.info .title:focus{
+	color: #FFAAFF;
+}
+
+.info .category i{
+	margin-left: 4px;
+	margin-right: 7px;
+}
+
+.info .introduce{
+	margin-left: 4px;
+	margin-top: 10px;
+	line-height: 20px;
+
+}
+
+.category-icon::before{
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: "\f3c5";
+}
+
+.info p{
+	word-wrap: break-word;
+	word-break: break-all;
+}
