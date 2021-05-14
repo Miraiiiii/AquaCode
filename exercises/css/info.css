@@ -13,11 +13,7 @@
 }
 
 .info .title:hover{
-	color: #FFAAFF;
-}
-
-.info .title:focus{
-	color: #FFAAFF;
+	color: #aabeff;
 }
 
 .info .category i{
