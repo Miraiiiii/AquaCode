@@ -21,9 +21,55 @@
 }
 
 .services,
-.topbar li,
-span {
+.topbar li {
   float: left;
+}
+
+.appdownload {
+  position: relative;
+}
+
+.appdownload:hover .qrcode,
+.appdownload:hover::before {
+  display: block;
+}
+
+.appdownload::before {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top: none;
+  border-bottom-color: white;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.appdownload .qrcode {
+  display: none;
+  position: absolute;
+  left: -40px;
+  width: 124px;
+  height: 148px;
+  line-height: 1;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.appdownload .qrcode img {
+  width: 90px;
+  margin: 17px;
+  margin-bottom: 10px;
+}
+
+.appdownload .qrcode span {
+  color: black;
+  font-size: 14px;
 }
 
 .shop_cart,
