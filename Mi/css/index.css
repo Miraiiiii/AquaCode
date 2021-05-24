@@ -1,0 +1,51 @@
+/* 顶部导航条容器 */
+.topbar_wrapper {
+  width: 100%;
+  line-height: 40px;
+  background-color: #333;
+}
+
+.topbar a {
+  font-size: 12px;
+  color: #b0b0b0;
+  display: block;
+}
+
+.topbar .sep {
+  color: #424242;
+  margin: 0 0.3em;
+}
+
+.topbar a:hover {
+  color: white;
+}
+
+.services,
+.topbar li,
+span {
+  float: left;
+}
+
+.shop_cart,
+.user-info {
+  float: right;
+}
+
+.shop_cart {
+  margin-left: 15px;
+}
+
+.shop_cart:hover a {
+  background-color: white;
+  color: #ff6700;
+}
+
+.shop_cart a {
+  width: 120px;
+  background-color: #424242;
+  text-align: center;
+}
+
+.shop_cart i {
+  margin-right: 2px;
+}
