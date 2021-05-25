@@ -32,6 +32,7 @@
 .appdownload:hover .qrcode,
 .appdownload:hover::before {
   display: block;
+  height: 148px;
 }
 
 .appdownload::before {
@@ -50,15 +51,17 @@
 }
 
 .appdownload .qrcode {
-  display: none;
   position: absolute;
+  overflow: hidden;
+  height: 0;
   left: -40px;
   width: 124px;
-  height: 148px;
   line-height: 1;
   text-align: center;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* 设置过渡效果 */
+  transition: height 0.3s;
 }
 
 .appdownload .qrcode img {
@@ -79,6 +82,27 @@
 
 .shop_cart {
   margin-left: 15px;
+  position: relative;
+}
+
+.shop_cart .cart_menu {
+  position: absolute;
+  overflow: hidden;
+  left: -196px;
+  width: 316px;
+  /* height: 0; */
+  text-align: center;
+  /* line-height: 80px; */
+  color: #424242;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: height 0.3s;
+}
+
+.shop_cart .cart_menu .cart_menu_msg {
+  margin: 0 20px 20px 20px;
+  padding: 20px 0 20px 0px;
+  font-size: 12px;
 }
 
 .shop_cart:hover a {
@@ -94,4 +118,9 @@
 
 .shop_cart i {
   margin-right: 2px;
+}
+
+.shop_cart:hover .cart_menu {
+  display: block;
+  height: 80px;
 }
