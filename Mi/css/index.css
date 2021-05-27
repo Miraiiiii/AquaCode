@@ -29,6 +29,7 @@
 
 .appdownload {
   position: relative;
+  z-index: 9998;
 }
 
 .appdownload:hover .qrcode,
@@ -85,6 +86,7 @@
 .shop_cart {
   margin-left: 15px;
   position: relative;
+  z-index: 999;
 }
 
 .shop_cart .cart_menu {
@@ -130,6 +132,10 @@
   height: 100px;
 }
 
+.header_wrapper {
+  position: relative;
+}
+
 .header .logo {
   float: left;
   margin-top: 22px;
@@ -172,11 +178,47 @@
   margin-left: 7px;
 }
 
-.nav_wrapper li {
+.nav_wrapper .nav > li {
   float: left;
 }
 
+.first_wrapper {
+  position: relative;
+}
+
+.left_menu {
+  width: 234px;
+  height: 460px;
+  padding: 20px 0;
+  left: -120px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 99;
+  line-height: 1;
+}
+
+.nav .left_menu a {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  color: white;
+  margin-right: 0;
+  padding: 0 30px;
+  font-size: 14px;
+}
+
+.left_menu a i {
+  float: right;
+  line-height: 42px;
+}
+
+ul .left_menu li a:hover {
+  color: white;
+  background-color: #ff6700;
+}
+
 .nav_wrapper li a {
+  display: block;
   font-size: 16px;
   padding: 0 10px;
 }
@@ -191,6 +233,68 @@
   padding-left: 58px;
 }
 
-.first {
+.nav .first {
   visibility: hidden;
+}
+
+.nav .goods_info {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  transition: height 0.3s;
+  z-index: 9999;
+}
+
+.nav
+  li:not(:first-of-type):not(:nth-child(10)):not(:nth-child(9)):hover
+  ~ .goods_info,
+.goods_info:hover {
+  height: 228px;
+  border: 1px solid rgb(224, 224, 224);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 18%);
+}
+
+.search_wrapper {
+  width: 296px;
+  height: 50px;
+  float: right;
+  margin-top: 25px;
+}
+
+.search_wrapper .search_inp {
+  width: 244px;
+  float: left;
+  border: none;
+  box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  border-right: none;
+  height: 50px;
+  padding: 0 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search_wrapper .search_inp:focus,
+.search_wrapper .search_inp:focus + button {
+  border-color: #ff6700;
+}
+
+.search_wrapper .search_btn {
+  float: left;
+  width: 52px;
+  height: 50px;
+  padding: 0;
+  border: 1px solid rgb(224, 224, 224);
+  background-color: white;
+  color: #616161;
+  font-size: 18px;
+}
+
+.search_wrapper .search_btn:hover {
+  background-color: #ff6700;
+  border: #ff6700;
+  color: white;
 }
