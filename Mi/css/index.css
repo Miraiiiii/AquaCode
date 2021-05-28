@@ -188,7 +188,6 @@
 
 .left_menu {
   width: 234px;
-  height: 460px;
   padding: 20px 0;
   left: -120px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -360,4 +359,19 @@ ul .left_menu li a:hover {
 
 .next_slides .next:hover {
   background-position: -42px 0;
+}
+
+.back_top {
+  width: 26px;
+  height: 206px;
+  background-color: aqua;
+  position: fixed;
+  bottom: 60px;
+  right: 50%;
+  /* 
+  left + margin-left + width + margin-right + right = 视口宽度
+  auto + 0 + 26 + 0 +50% = 视口宽度
+  margin-right-639px = margin-left+639px
+  */
+  margin-right: -639px;
 }
