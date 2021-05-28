@@ -86,7 +86,7 @@
 .shop_cart {
   margin-left: 15px;
   position: relative;
-  z-index: 999;
+  z-index: 100;
 }
 
 .shop_cart .cart_menu {
@@ -240,6 +240,7 @@ ul .left_menu li a:hover {
 .nav .goods_info {
   position: absolute;
   overflow: hidden;
+  background-color: white;
   height: 0;
   width: 100%;
   top: 100px;
@@ -297,4 +298,66 @@ ul .left_menu li a:hover {
   background-color: #ff6700;
   border: #ff6700;
   color: white;
+}
+
+.banner {
+  position: relative;
+  height: 460px;
+}
+
+.banner .img_list li {
+  position: absolute;
+}
+
+.banner img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.banner .pointer {
+  position: absolute;
+  bottom: 22px;
+  right: 35px;
+}
+
+.banner .pointer a {
+  float: left;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(255, 192, 203, 0.6);
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.4);
+  margin-right: 6px;
+}
+
+.banner .pointer a:hover {
+  background-color: white;
+}
+
+.next_slides a {
+  position: absolute;
+  width: 41px;
+  height: 69px;
+  background-image: url(../img/icon-slides.png);
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.next_slides .prev {
+  left: 234px;
+  background-position: -84px 0;
+}
+
+.next_slides .next {
+  right: 0;
+  background-position: -125px 0;
+}
+
+.next_slides .prev:hover {
+  background-position: 0 0;
+}
+
+.next_slides .next:hover {
+  background-position: -42px 0;
 }
