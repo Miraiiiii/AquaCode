@@ -1,0 +1,24 @@
+.box1 {
+  width: 250px;
+  height: 312px;
+  margin: 0 auto;
+  background-image: url(../img/doraemon2.png);
+  /* background-position: -246px -322.5px; */
+  background-repeat: no-repeat;
+  /* background-size: 400% 100%; */
+  /* animation: dora 0.5s steps(3) infinite; */
+  /* -webkit-animation: dora 0.5s steps(3) infinite; */
+  /* animation-iteration-count: infinite, infinite; */
+  animation: dora1 3s steps(6) infinite;
+  /* background-color: aqua; */
+}
+
+@keyframes dora1 {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -1536px 0;
+  }
+}
