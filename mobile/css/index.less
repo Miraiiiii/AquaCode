@@ -1,0 +1,74 @@
+@total-width: 750;
+@center-height: (175rem /40);
+
+.w {
+  width: (693rem /40);
+  margin: 0 auto;
+}
+
+html {
+  font-size: (100vw / @total-width) * 40;
+  background-color: #eff0f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-bar:extend(.w) {
+  display: flex;
+  height: @center-height;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: #24253d;
+    font-size: 30px;
+
+    i {
+      color: #999;
+      font-size: 16px;
+    }
+  }
+}
+
+.banner:extend(.w) {
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.menu:extend(.w) {
+  height: (329rem/40);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+  font-size: 17px;
+
+  a {
+    width: (327rem/40);
+    height: (104rem/40);
+    line-height: (104rem/40);
+    color: white;
+    border-radius: 5px;
+
+    i {
+      margin: 0 (14rem/40) 0 (28rem/40);
+    }
+  }
+
+  .course {
+    background-color: #f97053;
+  }
+  .star {
+    background-color: #cd6efe;
+  }
+  .sub {
+    background-color: #fe4479;
+  }
+  .download {
+    background-color: #1bc4fb;
+  }
+}
