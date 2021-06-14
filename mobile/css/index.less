@@ -18,16 +18,17 @@ a {
 .top-bar:extend(.w) {
   display: flex;
   height: @center-height;
+  line-height: @center-height;
   justify-content: space-between;
   align-items: center;
 
   a {
     color: #24253d;
-    font-size: 30px;
+    font-size: (50rem/40);
 
     i {
       color: #999;
-      font-size: 16px;
+      font-size: (40rem/40);
     }
   }
 }
@@ -70,5 +71,85 @@ a {
   }
   .download {
     background-color: #1bc4fb;
+  }
+}
+
+.course-list:extend(.w) {
+  height: (420rem/40);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: (46rem/40);
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: #24253d;
+      font-size: (33rem/40);
+      border-left: 2px solid #3a84ff;
+      padding-left: 4px;
+    }
+
+    a {
+      font-size: (28rem/40);
+      color: #656565;
+    }
+  }
+}
+
+.item-list {
+  width: (720rem/40);
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  flex: none;
+  box-sizing: border-box;
+  width: (320rem/40);
+  height: (324rem/40);
+  padding: 0 (22rem/40);
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-right: (30rem/40);
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .course-title {
+    font-size: (28rem/40);
+    color: #24253d;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar {
+    width: (42rem/40);
+    height: (42rem/40);
+  }
+
+  .name {
+    margin-left: 6px;
+    font-size: (24rem/40);
+    color: #969393;
   }
 }

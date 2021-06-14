@@ -1,7 +1,8 @@
 .w,
 .top-bar,
 .banner,
-.menu {
+.menu,
+.course-list {
   width: 17.325rem;
   margin: 0 auto;
 }
@@ -15,16 +16,17 @@ a {
 .top-bar {
   display: flex;
   height: 4.375rem;
+  line-height: 4.375rem;
   justify-content: space-between;
   align-items: center;
 }
 .top-bar a {
   color: #24253d;
-  font-size: 30px;
+  font-size: 1.25rem;
 }
 .top-bar a i {
   color: #999;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .banner img {
   width: 100%;
@@ -59,4 +61,72 @@ a {
 }
 .menu .download {
   background-color: #1bc4fb;
+}
+.course-list {
+  height: 10.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+.course-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-list .title h2 {
+  color: #24253d;
+  font-size: 0.825rem;
+  border-left: 2px solid #3a84ff;
+  padding-left: 4px;
+}
+.course-list .title a {
+  font-size: 0.7rem;
+  color: #656565;
+}
+.item-list {
+  width: 18rem;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+.item {
+  flex: none;
+  box-sizing: border-box;
+  width: 8rem;
+  height: 8.1rem;
+  padding: 0 0.55rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-right: 0.75rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.item img {
+  width: 100%;
+  vertical-align: top;
+}
+.item .course-title {
+  font-size: 0.7rem;
+  color: #24253d;
+}
+.item .user-info {
+  display: flex;
+  align-items: center;
+}
+.item .avatar {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.item .name {
+  margin-left: 6px;
+  font-size: 0.6rem;
+  color: #969393;
 }
