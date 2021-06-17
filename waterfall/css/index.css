@@ -1,0 +1,114 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fedfe1;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.song-list {
+  width: 660px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  /* column-count: 4;
+  column-gap: 30px; */
+}
+#select {
+  display: none;
+}
+
+.card {
+  top: 100px;
+  position: relative;
+  width: 200px;
+  height: 180px; /*短了120px
+  /* margin-top: 20px; */
+  /* margin: 10px; */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  text-align: center;
+  /* overflow: hidden; */
+  /* float: left; */
+  /* display: flex; */
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  height: 300px;
+  z-index: 999;
+}
+
+.image1 {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background: url(../img/EmlIXExU0AEwJ2W.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  left: 10px;
+  top: -60px;
+}
+
+.title1 {
+  position: relative;
+  top: -56px; /*位移了56px*/
+  font-size: 22px;
+  color: rgb(88, 88, 88);
+  margin: 12px 0 7px 0;
+}
+
+.line {
+  position: relative;
+  top: -56px;
+  height: 1px;
+  width: 160px;
+  background-color: gray;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.song-rank {
+  position: relative;
+  top: -60px;
+  /* margin: 5px 0 0 0; */
+  font-size: 12px;
+  line-height: 12px;
+  color: gray;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .line,
+.card:hover .song-rank {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
